@@ -1,2 +1,6 @@
-# netflix-clone
-Netflix clone | React JS, Firebase, TMDB API (+Responsive)
+# Netflix clone | React JS, Firebase, TMDB API (+Responsive)
+
+## Video tutorial:
+
+
+## Demo:
