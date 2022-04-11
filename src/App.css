@@ -1,0 +1,250 @@
+/** FONTS **/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin-top: 0;
+}
+body{
+    background-color: #111111;
+}
+
+/** LOGIN **/
+
+.login{
+    text-align: center;
+    padding-top: 200px;
+}
+.login img{
+    width: 200px;
+}
+.login .loginBtn{
+    background-color: #fff;
+    color: #cd1820;
+    padding: 10px 45px;
+    margin-top: 20px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.loginBtn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/** LOGIN **/
+
+/** NAVIGATION **/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    padding: 0 30px;
+}
+.fixedNav{
+    z-index: 999;
+    background-color: #000000e3;
+    backdrop-filter: blur(10px);
+}
+.brand img{
+    width: 100px;
+}
+.authButton{
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+.authButton > .userImage{
+    width: 50px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+/** NAVIGATION **/
+
+/** HEADER **/
+
+header{
+    height: 100vh;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+    background: linear-gradient(90deg, #070707f7 50%, transparent 75%);
+    padding: 0 35px;
+}
+.bannerContents .movieTitle{
+    font-size: 60px;
+    color: #fff;
+}
+.buttons .btn{
+    padding: 15px 35px;
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 0.7s ease;
+    -webkit-transition: 0.7s ease;
+}
+.buttons .btn:nth-child(2){
+    background-color: #000;
+    color: #fff;
+    margin-left: 20px;
+}
+.buttons .btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.movieDesc{
+    width: 50%;
+    color: #fff;
+    margin-top: 35px;
+}
+
+/** HEADER**/
+
+/** FILMS CATEGORIES **/
+
+.filmsCategory{
+    padding: 15px;
+}
+.filmsCategory h3{
+    color: #fff;
+}
+.films{
+    display: flex;
+    padding: 20px;
+}
+.film{
+    width: 100%;
+    object-fit: cover;
+    max-height: 100px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.filmPosterLarge{
+    max-height: 250px;
+}
+.ytPlayer{
+    width: 1275px;
+    padding: 0 20px;
+}
+
+/** FILMS CATEGORIES **/
+
+/** RESPONSIVE **/
+
+@media screen and (max-width: 767px) {
+    .navbar{
+        padding: 0 17px;
+    }
+    .main{
+        background: linear-gradient(90deg, #070707eb 47%, transparent 85%);
+        padding: 0 18px;
+    }
+    .movieTitle{
+        font-size: 45px!important;
+    }
+    .btn{
+        padding: 15px 20px!important;
+        font-size: 17px!important;
+    }
+    .movieDesc{
+        width: 85%;
+        font-size: 17px;
+    }
+
+    .filmsCategory{
+        padding: 20px 15px;
+    }
+    .films{
+        padding: 10px;
+        overflow-x: scroll;
+    }
+    .ytPlayer{
+        width: 95%;
+    }
+    .filmPosterLarge{
+        max-height: 220px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .navbar{
+        padding: 0 17px;
+    }
+    .main{
+        background: linear-gradient(90deg, #070707eb 43%, transparent 85%);
+        padding: 0 18px;
+    }
+    .movieTitle{
+        font-size: 40px!important;
+    }
+    .btn{
+        padding: 15px 20px!important;
+        font-size: 17px!important;
+    }
+    .movieDesc{
+        width: 80%;
+        font-size: 14px ;
+    }
+
+    .filmsCategory{
+        padding: 20px 10px;
+    }
+    .films{
+        padding: 10px;
+        overflow-x: scroll;
+    }
+    .ytPlayer{
+        width: 93%;
+    }
+    .filmPosterLarge{
+        max-height: 220px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .navbar{
+        padding: 0 17px;
+    }
+    .main{
+        background: linear-gradient(90deg, #070707eb 50%, transparent 85%);
+        padding: 0 18px;
+    }
+    .movieTitle{
+        font-size: 40px!important;
+    }
+    .btn{
+        padding: 15px 20px!important;
+        font-size: 17px!important;
+    }
+    .movieDesc{
+        width: 80%;
+        font-size: 14px ;
+    }
+
+    .filmsCategory{
+        padding: 20px 10px;
+    }
+    .films{
+        padding: 10px;
+        overflow-x: scroll;
+    }
+    .ytPlayer{
+        width: 90%;
+    }
+    .filmPosterLarge{
+        max-height: 220px;
+    }
+}
+
+/** RESPONSIVE **/
